@@ -1,0 +1,8 @@
+{
+  "x": "{{randomValue length=4 type='NUMERIC'}}",
+  "y": "{{randomValue length=4 type='ALPHABETIC' uppercase=true}}",
+  "z": "{{randomValue length=10 type='ALPHABETIC' uppercase=true}}",
+  "q": "{{randomValue length=2 type='NUMERIC'}}",
+  "w": "{{randomValue length=11 type='NUMERIC'}}",
+  "e": "{{randomValue type='UUID'}}"
+}

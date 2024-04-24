@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  wiremock:
+    container_name: my_wiremock
+    image: wiremock/wiremock:latest
+    volumes:
+      - ./wiremock/stubs:/home/wiremock
+    command: [ "--verbose", "--global-response-templating", "--local-response-templating"]
+    ports:
+      - "8080:8080"

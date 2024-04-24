@@ -1,0 +1,32 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "url": "/test/test",
+        "method": "GET",
+        "headers": {
+          "x-header": {
+            "matches": ".*"
+          }
+        },
+        "queryParameters": {
+          "method": {
+            "equalTo": ".*"
+          }
+        },
+        "bodyPatterns": [
+          {
+            "matches": ".*"
+          }
+        ]
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200,
+        "bodyFileName": "test2_response.json"
+      }
+    }
+  ]
+}
